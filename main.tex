@@ -1,0 +1,81 @@
+\documentclass{IEEEtran}
+%% BIbliography Setup - Biblatex please
+\usepackage[
+backend=biber,
+style=ieee,
+]{biblatex}
+\addbibresource{DBTReferences.bib}
+
+%% Packages
+\usepackage{caption}
+\usepackage [none] {hyphenat} 
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{subcaption}
+\usepackage{pdfpages}
+\usepackage{booktabs}
+
+\markboth{First National Conference On Advanced Materials and their Applications , October 18 and 19 th 2023 Tipaza}{Last Name \MakeLowercase{\textit{et al.}}: Title}
+
+\title{CDT 22 - Design, Build and Test. Sequential Instabilities for Actuating Aerodynamic Surfaces}
+\author{First Author$^1$, Second Author$^2$, and Third Author$^3$\\
+	$^1$Department of Electrical Engineering, University of X, X City, X Country\\
+	$^2$Department of Computer Science, University of Y, Y City, Y Country\\
+	$^3$Department of Mechanical Engineering, University of Z, Z City, Z Country\\
+	\{first.author, second.author, third.author\}@cu-tipaza.dz}
+\begin{document}
+	\maketitle
+	
+	\begin{abstract}
+		
+	\end{abstract}
+	
+	\section{Introduction}
+	Poo \cite{Guest2006}
+	
+	\section{Methodology}
+	
+	
+	\subsection{Equations}
+	Here is an example of an equation:
+	\begin{equation}
+		f(x) = x^2 + 2x + 1
+	\end{equation}
+	
+	\subsection{Tables}
+	Here is an example of a table:
+	\begin{table}[htbp]
+		\centering
+		\caption{Example Table}
+		\label{tab:example}
+		\begin{tabular}{|c|c|c|}
+			\hline
+			\textbf{Column 1} & \textbf{Column 2} & \textbf{Column 3} \\
+			\hline
+			Row 1, Column 1 & Row 1, Column 2 & Row 1, Column 3 \\
+			\hline
+			Row 2, Column 1 & Row 2, Column 2 & Row 2, Column 3 \\
+			\hline
+			Row 3, Column 1 & Row 3, Column 2 & Row 3, Column 3 \\
+			\hline
+		\end{tabular}
+	\end{table}
+	
+	\subsection{Figures}
+	Here is an example of a figure:
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.4\textwidth]{example-image-a}
+		\caption{Example Figure}
+		\label{fig:example}
+	\end{figure}
+	
+	\section{Results}
+	
+	\section{Conclusion}
+	
+	
+    \printbibliography
+	
+\end{document}
