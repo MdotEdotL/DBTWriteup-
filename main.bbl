@@ -1,0 +1,64 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{Guest2006}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ce38843e1cd2a02ab319d1bb8bc6985a}{%
+           family={Guest},
+           familyi={G\bibinitperiod},
+           given={S.D},
+           giveni={S\bibinitperiod}}}%
+        {{hash=99f4c39cfd54612ec96ba678abfdb880}{%
+           family={Pellegrino},
+           familyi={P\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Royal Society}%
+      }
+      \strng{namehash}{89944b72cf50b6bf5c3d7acc06a5fdbd}
+      \strng{fullhash}{89944b72cf50b6bf5c3d7acc06a5fdbd}
+      \strng{bibnamehash}{89944b72cf50b6bf5c3d7acc06a5fdbd}
+      \strng{authorbibnamehash}{89944b72cf50b6bf5c3d7acc06a5fdbd}
+      \strng{authornamehash}{89944b72cf50b6bf5c3d7acc06a5fdbd}
+      \strng{authorfullhash}{89944b72cf50b6bf5c3d7acc06a5fdbd}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences}
+      \field{month}{1}
+      \field{number}{2067}
+      \field{title}{Analytical models for bistable cylindrical shells}
+      \field{volume}{462}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{pages}{839\bibrangedash 854}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1098/rspa.2005.1598
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
