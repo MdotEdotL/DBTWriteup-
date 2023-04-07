@@ -19,43 +19,92 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
-    \entry{Guest2006}{article}{}
-      \name{author}{2}{}{%
-        {{hash=ce38843e1cd2a02ab319d1bb8bc6985a}{%
-           family={Guest},
-           familyi={G\bibinitperiod},
-           given={S.D},
-           giveni={S\bibinitperiod}}}%
-        {{hash=99f4c39cfd54612ec96ba678abfdb880}{%
-           family={Pellegrino},
-           familyi={P\bibinitperiod},
-           given={S},
-           giveni={S\bibinitperiod}}}%
+    \entry{Wu2019}{article}{}
+      \name{author}{3}{}{%
+        {{hash=de75d8e160ca13e48c143cc033f970f1}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Z},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=107d78a747d4c1e031e0191dcac12c98}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Y},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=418484d5c4b15e16c0367dc97e88c5a6}{%
+           family={Ismail},
+           familyi={I\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {The Royal Society}%
+        {Cambridge University Press (CUP)}%
       }
-      \strng{namehash}{89944b72cf50b6bf5c3d7acc06a5fdbd}
-      \strng{fullhash}{89944b72cf50b6bf5c3d7acc06a5fdbd}
-      \strng{bibnamehash}{89944b72cf50b6bf5c3d7acc06a5fdbd}
-      \strng{authorbibnamehash}{89944b72cf50b6bf5c3d7acc06a5fdbd}
-      \strng{authornamehash}{89944b72cf50b6bf5c3d7acc06a5fdbd}
-      \strng{authorfullhash}{89944b72cf50b6bf5c3d7acc06a5fdbd}
+      \strng{namehash}{0b8f5f9f270dd5ba1cb8bc042a18c2ed}
+      \strng{fullhash}{0b8f5f9f270dd5ba1cb8bc042a18c2ed}
+      \strng{bibnamehash}{0b8f5f9f270dd5ba1cb8bc042a18c2ed}
+      \strng{authorbibnamehash}{0b8f5f9f270dd5ba1cb8bc042a18c2ed}
+      \strng{authornamehash}{0b8f5f9f270dd5ba1cb8bc042a18c2ed}
+      \strng{authorfullhash}{0b8f5f9f270dd5ba1cb8bc042a18c2ed}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences}
-      \field{month}{1}
-      \field{number}{2067}
-      \field{title}{Analytical models for bistable cylindrical shells}
-      \field{volume}{462}
-      \field{year}{2006}
+      \field{day}{25}
+      \field{journaltitle}{The Aeronautical Journal}
+      \field{month}{6}
+      \field{number}{1266}
+      \field{title}{Gust loads on aircraft}
+      \field{volume}{123}
+      \field{year}{2019}
       \field{dateera}{ce}
-      \field{pages}{839\bibrangedash 854}
-      \range{pages}{16}
+      \field{pages}{1216\bibrangedash 1274}
+      \range{pages}{59}
       \verb{doi}
-      \verb 10.1098/rspa.2005.1598
+      \verb 10.1017/aer.2019.48
+      \endverb
+    \endentry
+    \entry{Alam2015}{article}{}
+      \name{author}{3}{}{%
+        {{hash=97aaf698ff591d4c7c8e8d1fa4f21f90}{%
+           family={Alam},
+           familyi={A\bibinitperiod},
+           given={Mushfiqul},
+           giveni={M\bibinitperiod}}}%
+        {{hash=eb7e2f08ffaa7b012e4211779be1d962}{%
+           family={Hromcik},
+           familyi={H\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1be9b62cff8c353c097a0c9dc4d33cad}{%
+           family={Hanis},
+           familyi={H\bibinitperiod},
+           given={Tomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{47189827a7d39e112ad9144daee74815}
+      \strng{fullhash}{47189827a7d39e112ad9144daee74815}
+      \strng{bibnamehash}{47189827a7d39e112ad9144daee74815}
+      \strng{authorbibnamehash}{47189827a7d39e112ad9144daee74815}
+      \strng{authornamehash}{47189827a7d39e112ad9144daee74815}
+      \strng{authorfullhash}{47189827a7d39e112ad9144daee74815}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Aerospace Science and Technology}
+      \field{month}{2}
+      \field{title}{Active gust load alleviation system for flexible aircraft: Mixed feedforward/feedback approach}
+      \field{volume}{41}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{pages}{122\bibrangedash 133}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/j.ast.2014.12.020
       \endverb
     \endentry
   \enddatalist
