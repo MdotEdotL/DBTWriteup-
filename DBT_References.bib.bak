@@ -95,4 +95,17 @@
   publisher = {Cambridge University Press (CUP)},
 }
 
+@Article{Alam2015,
+  author    = {Alam, Mushfiqul and Hromcik, Martin and Hanis, Tomas},
+  journal   = {Aerospace Science and Technology},
+  title     = {Active gust load alleviation system for flexible aircraft: Mixed feedforward/feedback approach},
+  year      = {2015},
+  month     = {2},
+  pages     = {122-133},
+  volume    = {41},
+  date      = {2015-02},
+  doi       = {10.1016/j.ast.2014.12.020},
+  publisher = {Elsevier BV},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
