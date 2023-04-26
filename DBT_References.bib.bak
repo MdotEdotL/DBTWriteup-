@@ -174,4 +174,16 @@
   publisher = {{ASME} International},
 }
 
+@Article{Wheatcroft_2023,
+  author    = {E. D. Wheatcroft and J. Shen and R. M. J. Groh and A. Pirrera and M. Schenk},
+  journal   = {Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences},
+  title     = {Structural function from sequential, interacting elastic instabilities},
+  year      = {2023},
+  month     = {apr},
+  number    = {2272},
+  volume    = {479},
+  doi       = {https://doi.org/10.1098/rspa.2022.0861},
+  publisher = {The Royal Society},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
