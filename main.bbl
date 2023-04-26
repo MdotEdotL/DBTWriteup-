@@ -64,47 +64,173 @@
       \verb 10.1017/aer.2019.48
       \endverb
     \endentry
-    \entry{Alam2015}{article}{}
+    \entry{Guo_2015}{article}{}
       \name{author}{3}{}{%
-        {{hash=97aaf698ff591d4c7c8e8d1fa4f21f90}{%
-           family={Alam},
-           familyi={A\bibinitperiod},
-           given={Mushfiqul},
-           giveni={M\bibinitperiod}}}%
-        {{hash=eb7e2f08ffaa7b012e4211779be1d962}{%
-           family={Hromcik},
-           familyi={H\bibinitperiod},
-           given={Martin},
-           giveni={M\bibinitperiod}}}%
-        {{hash=1be9b62cff8c353c097a0c9dc4d33cad}{%
-           family={Hanis},
-           familyi={H\bibinitperiod},
-           given={Tomas},
-           giveni={T\bibinitperiod}}}%
+        {{hash=5a24e10963ddb43cc3a28aaa2ab3221e}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Shijun},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a846a5e0bb31fb6816ef7d7989235ef7}{%
+           family={Monteros},
+           familyi={M\bibinitperiod},
+           given={Jaime\bibnamedelimb De\bibnamedelima Los},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=d16056932a393b93367a5223974b55f6}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Ying},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {{MDPI} {AG}}%
+      }
+      \strng{namehash}{87583d01a8411cc9cbc887c0d2673220}
+      \strng{fullhash}{87583d01a8411cc9cbc887c0d2673220}
+      \strng{bibnamehash}{87583d01a8411cc9cbc887c0d2673220}
+      \strng{authorbibnamehash}{87583d01a8411cc9cbc887c0d2673220}
+      \strng{authornamehash}{87583d01a8411cc9cbc887c0d2673220}
+      \strng{authorfullhash}{87583d01a8411cc9cbc887c0d2673220}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Aerospace}
+      \field{month}{4}
+      \field{number}{2}
+      \field{title}{Gust Alleviation of a Large Aircraft with a Passive Twist Wingtip}
+      \field{volume}{2}
+      \field{year}{2015}
+      \field{pages}{135\bibrangedash 154}
+      \range{pages}{20}
+      \verb{doi}
+      \verb https://doi.org/10.3390/aerospace2020135
+      \endverb
+    \endentry
+    \entry{Li2021}{article}{}
+      \name{author}{2}{}{%
+        {{hash=fa78c10f23d9e381cf755ae178f4f252}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yonghong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=874b050699ea125e31f92ba1a50a0a35}{%
+           family={Qin},
+           familyi={Q\bibinitperiod},
+           given={Ning},
+           giveni={N\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Elsevier BV}%
       }
-      \strng{namehash}{47189827a7d39e112ad9144daee74815}
-      \strng{fullhash}{47189827a7d39e112ad9144daee74815}
-      \strng{bibnamehash}{47189827a7d39e112ad9144daee74815}
-      \strng{authorbibnamehash}{47189827a7d39e112ad9144daee74815}
-      \strng{authornamehash}{47189827a7d39e112ad9144daee74815}
-      \strng{authorfullhash}{47189827a7d39e112ad9144daee74815}
+      \strng{namehash}{10138e781a3962d0520621baab284cdc}
+      \strng{fullhash}{10138e781a3962d0520621baab284cdc}
+      \strng{bibnamehash}{10138e781a3962d0520621baab284cdc}
+      \strng{authorbibnamehash}{10138e781a3962d0520621baab284cdc}
+      \strng{authornamehash}{10138e781a3962d0520621baab284cdc}
+      \strng{authorfullhash}{10138e781a3962d0520621baab284cdc}
+      \field{extraname}{1}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Aerospace Science and Technology}
-      \field{month}{2}
-      \field{title}{Active gust load alleviation system for flexible aircraft: Mixed feedforward/feedback approach}
-      \field{volume}{41}
-      \field{year}{2015}
+      \field{journaltitle}{Journal of Fluids and Structures}
+      \field{month}{11}
+      \field{title}{Gust load alleviation on an aircraft wing by trailing edge Circulation Control}
+      \field{volume}{107}
+      \field{year}{2021}
       \field{dateera}{ce}
-      \field{pages}{122\bibrangedash 133}
-      \range{pages}{12}
+      \field{pages}{103407}
+      \range{pages}{1}
       \verb{doi}
-      \verb 10.1016/j.ast.2014.12.020
+      \verb 10.1016/j.jfluidstructs.2021.103407
+      \endverb
+    \endentry
+    \entry{Li_2022}{article}{}
+      \name{author}{2}{}{%
+        {{hash=fa78c10f23d9e381cf755ae178f4f252}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yonghong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=874b050699ea125e31f92ba1a50a0a35}{%
+           family={Qin},
+           familyi={Q\bibinitperiod},
+           given={Ning},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {{MDPI} {AG}}%
+      }
+      \strng{namehash}{10138e781a3962d0520621baab284cdc}
+      \strng{fullhash}{10138e781a3962d0520621baab284cdc}
+      \strng{bibnamehash}{10138e781a3962d0520621baab284cdc}
+      \strng{authorbibnamehash}{10138e781a3962d0520621baab284cdc}
+      \strng{authornamehash}{10138e781a3962d0520621baab284cdc}
+      \strng{authorfullhash}{10138e781a3962d0520621baab284cdc}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Applied Sciences}
+      \field{month}{10}
+      \field{number}{20}
+      \field{title}{A Review of Flow Control for Gust Load Alleviation}
+      \field{volume}{12}
+      \field{year}{2022}
+      \field{pages}{10537}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.3390/app122010537
+      \endverb
+    \endentry
+    \entry{QI_2011}{article}{}
+      \name{author}{4}{}{%
+        {{hash=d050c59c9e3dd0bb26350d278b1be88d}{%
+           family={QI},
+           familyi={Q\bibinitperiod},
+           given={Haitao},
+           giveni={H\bibinitperiod}}}%
+        {{hash=7e3a7fa73c52cb0d427a048134bb29dd}{%
+           family={FU},
+           familyi={F\bibinitperiod},
+           given={Yongling},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=64cba622a67bfc5c6a654fcb047e922c}{%
+           family={QI},
+           familyi={Q\bibinitperiod},
+           given={Xiaoye},
+           giveni={X\bibinitperiod}}}%
+        {{hash=575fda7a02da14ca5df6b8267f557eb1}{%
+           family={LANG},
+           familyi={L\bibinitperiod},
+           given={Yan},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier {BV}}%
+      }
+      \strng{namehash}{4c0449ae57446f3d4f0a835fda4026e7}
+      \strng{fullhash}{fa6db1de2357fe697927c0b4fb40fb4f}
+      \strng{bibnamehash}{fa6db1de2357fe697927c0b4fb40fb4f}
+      \strng{authorbibnamehash}{fa6db1de2357fe697927c0b4fb40fb4f}
+      \strng{authornamehash}{4c0449ae57446f3d4f0a835fda4026e7}
+      \strng{authorfullhash}{fa6db1de2357fe697927c0b4fb40fb4f}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Chinese Journal of Aeronautics}
+      \field{month}{8}
+      \field{number}{4}
+      \field{title}{Architecture Optimization of More Electric Aircraft Actuation System}
+      \field{volume}{24}
+      \field{year}{2011}
+      \field{pages}{506\bibrangedash 513}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/S1000-9361(11)60058-7
       \endverb
     \endentry
   \enddatalist

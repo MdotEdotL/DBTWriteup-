@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.19)  6 APR 2023 13:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.19)  26 APR 2023 12:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -782,24 +782,19 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <11> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 28.
-
-Underfull \hbox (badness 1502) in paragraph at lines 35--36
-\OT1/ptm/m/n/10 air-frame stresses. How-ever, such con-trol sur-faces utilise
- []
-
 <example-image-a.pdf, id=1, 321.2pt x 240.9pt>
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
-Package pdftex.def Info: example-image-a.pdf  used on input line 71.
+Package pdftex.def Info: example-image-a.pdf  used on input line 75.
 (pdftex.def)             Requested size: 206.39685pt x 154.80035pt.
 
-Underfull \hbox (badness 2393) in paragraph at lines 82--82
+Underfull \hbox (badness 2393) in paragraph at lines 86--86
 []\OT1/ptm/m/n/10 Z. Wu, Y. Cao, and M. Is-mail, ``Gust loads on
  []
 
 
-Underfull \hbox (badness 1715) in paragraph at lines 82--82
-\OT1/ptm/m/n/10 load al-le-vi-a-tion sys-tem for flex-i-ble air-craft: Mixed
+Underfull \hbox (badness 2150) in paragraph at lines 86--86
+\OT1/ptm/m/n/10 of a large air-craft with a pas-sive twist wingtip,''
  []
 
 [1{C:/Users/yn21907/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
@@ -807,19 +802,26 @@ Underfull \hbox (badness 1715) in paragraph at lines 82--82
 
  <C:/Users/yn21907/AppData/Local/Programs/MiKTeX/tex/latex/mwe/example-image-a.
 pdf>]
-(main.aux)
+Underfull \hbox (badness 4353) in paragraph at lines 86--86
+\OT1/ptm/m/it/10 Chi-nese Jour-nal of Aero-nau-tics\OT1/ptm/m/n/10 , vol. 24, n
+o. 4,
+ []
+
+[2
+
+] (main.aux)
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 17528 strings out of 475281
- 375796 string characters out of 2773120
- 1095824 words of memory out of 3000000
- 38853 multiletter control sequences out of 15000+600000
+ 17537 strings out of 475281
+ 376150 string characters out of 2773120
+ 1099954 words of memory out of 3000000
+ 38862 multiletter control sequences out of 15000+600000
  505132 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,9n,75p,1111b,1232s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 66i,9n,75p,1062b,1232s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/yn21907/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<
 C:/Users/yn21907/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
 mmi10.pfb><C:/Users/yn21907/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
@@ -832,9 +834,9 @@ cal/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/yn21907/AppData/
 Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/yn21907/AppDa
 ta/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/yn21907/App
 Data/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (1 page, 110377 bytes).
+Output written on main.pdf (2 pages, 113217 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
+ 63 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
