@@ -32,7 +32,7 @@ style=ieee,
 	\maketitle
 	
 	\begin{abstract}
-        Structural instability is traditionally seen as a failure mode to be avoided. However, multiple novel designs which exploit the rapid, large scale deformations seen in nonlinear structures have been developed in recent years. A development of this design approach is too investigate the possibility of using interacting instabilities, a well known and studied phenomena, for useful functionality in deployment of morphing structures. In this work we seek to demonstrate the feasibility of the exploitation of interacting, sequential instability to achieve functionality for a wing mounted control surface for the application of gust load alleviation. This builds on a novel concept for a passively actuated spoiler first proposed in \cite{Wheatcroft_2023}. To display feasibility, a bespoke experimental setup was designed to initiate sequential instability between a clamped-clamped Euler strut and a composite laminate shaped to the profile of a NACA 3412 aerofoil. Results from experimentation imply that a sequential instability was successful in achieving rapid deployment. The results are compared to models of the test setup produced in Abaqus, to assure validity of the experiment and models produced. The captured data also provides insight into the behavior of a deployment system which exploits sequential instability which should be of use for further development of the concept presented.
+        Structural instability is traditionally seen as a failure mode to be avoided. However, in recent years multiple novel designs which exploit the rapid, large scale deformations seen in nonlinear structures have been developed. A development of this design approach is the investigation of using interacting instabilities, a well known and studied phenomena, for useful functionality in deployment of morphing structures. In this work we seek to demonstrate the feasibility of the exploitation of interacting, sequential instability to achieve functionality for a wing mounted control surface for the application of gust load alleviation. This builds on a novel concept for a passively actuated spoiler first proposed by Wheatcroft et al. in \cite{Wheatcroft_2023}. To display feasibility, a bespoke experimental setup was designed to initiate sequential instability between a clamped-clamped Euler strut and a composite laminate shaped to the profile of a NACA 3412 aerofoil. Results from experimentation imply that a sequential instability was successful in achieving rapid deployment. The results are compared to models of the test setup produced in Abaqus, to assure validity of the experiment and models produced. The captured data also provides insight into the behaviour of a deployment system that exploits sequential instability which should be of use for further development of the presented concept.
 	\end{abstract}
 	
 	\section{Introduction}
@@ -50,7 +50,7 @@ style=ieee,
 		\begin{figure}[!h]
             \captionsetup{justification=centering}
 			\centering{}
-			\includegraphics[width=0.45\textwidth]{IntroductionImages/Concept.png}
+			\includegraphics[width=0.5\textwidth]{IntroductionImages/Concept.png}
             \caption{FE model of original concept for passively actuated pop-up spoiler, \textbf{(a)}: undeployed state, \textbf{(b)} deployed state. \\ (Taken from \cite{Wheatcroft_2023})}
 			\label{fig:OGConcept}
 		\end{figure}
@@ -59,14 +59,14 @@ style=ieee,
 
 		\begin{figure}[!h]
 			\centering
-			\includesvg[width=0.45\textwidth]{IntroductionImages/vK-Strut_V2.svg}
+			\includesvg[width=0.5\textwidth]{IntroductionImages/vK-Strut_V2.svg}
 			\caption{\centering Bar and spring model representing the sequential instability system of the concept. (Reprinted from \cite{Wheatcroft_2023})}
 			\label{fig:BarNSpring}
 		\end{figure}
 	
 		\begin{figure}[!h]
 			\centering
-			\includegraphics[width=0.45\textwidth]{IntroductionImages/Desired_Path_V4.png}
+			\includegraphics[width=0.5\textwidth]{IntroductionImages/Desired_Path_V4.png}
 			\caption{\centering Ideal behaviour of the passively actuated spoiler concept. (Reprinted from \cite{Wheatcroft_2023})}
 			\label{fig:DesiredPath}
 		\end{figure}
@@ -81,18 +81,20 @@ style=ieee,
     To mitigate dust generation SE-84LV laminate was cut with a water-lubricated wet diamond tile cutter by RUBI. To mitigate the risk of chipping the thin ply was cut with stainless steel Glass Fibre Shears by Wilkinson.
     \subsection{Test Rig}
 
-    \section{Numerical Modeling}
-    ABAQUS was used for the finite element analysis of the strut-spoiler system. The Euler strut was modelled with wire beam elements and the spoiler used composite shell elements, as seen in \cref{fig:ModelAssem}. The spoiler was designed to follow the profile of the NACA XXXX aerofoil. 
-    A tie constraint was applied at the centre of the strut and at the centre of the equivalent quarter-chord
-    The Euler strut and aerofoil had a tie constraint applied at the centre of the former and the centre of the equivalent ¼ chord latter aerofoil position (point A in \Cref{fig:ModelAssem}) on the latter. A mesh sensitivity study was also performed. Following from Ref.[Eds paper], the spoiler is clamped at the leading edge and the nodes at point B are constrained to only move in the XZ plane. Additionally, the column has pinned-pinned edge constraints. 
+    \section{Numerical Modelling}
+    ABAQUS was used for the finite element analysis of the strut-spoiler system. The Euler strut was modelled with beam elements and the spoiler used composite shell elements, as seen in \cref{fig:ModelAssem}. The spoiler was designed to follow the profile of the NACA 3412 aerofoil. 
+    A tie constraint was applied at the centre of the strut and at the centre of the equivalent quarter-chord position of the spoiler (point A in \cref{fig:ModelAssem}). A mesh sensitivity study was also performed. Following from Ref.\cite{Wheatcroft_2023}, the spoiler is clamped at the leading edge and the nodes at point B are constrained to only move in the XZ plane. Additionally, the Euler Strut has pinned-pinned edge constraints. 
+    \\
+    The column was modelled as steel ($E = 200\;GPa$, $v=0.3$) and the aerofoil was modelled as one of two laminates.  The properties of the two laminates are shown in Table XX.
 
 
-    \begin{figure}[H]
+
+    \begin{figure*}[!h]
         \centering
-        \includegraphics[scale=0.4]{ModellingImages/ModelAssem.png}
+        \includegraphics[width=\textwidth]{ModellingImages/ModelAssem.png}
         \caption{}
         \label{fig:ModelAssem}
-    \end{figure}
+    \end{figure*}
 	
     \section{Testing Procedure}
 
