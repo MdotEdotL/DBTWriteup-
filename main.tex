@@ -15,6 +15,7 @@ style=ieee,
 \usepackage{subcaption}
 \usepackage{pdfpages}
 \usepackage{booktabs}
+\usepackage{svg}
 
 \markboth{First National Conference On Advanced Materials and their Applications , October 18 and 19 th 2023 Tipaza}{Last Name \MakeLowercase{\textit{et al.}}: Title}
 
@@ -33,7 +34,7 @@ style=ieee,
 	
 	\section{Introduction}
 		\subsection{Control Surfaces for Gust Load Alleviation}
-		489389784483Gust loads are well known as a source of potential catastrophic failure in aircraft structures; with rare, extreme gusts in particular being a source of the maximum loads that an aircraft may experience. \cite{Wu2019,Guo_2015}. Aircraft structural requirements are driven by extreme cases to prevent failure, despite operating in far less intense loading environments for the majority of the aircraft's service life \cite{Li2021}. The added capability to cope with extreme gust loads is unnecessary most of the time and comes with an associated parasitic mass increase, which causes reduced fuel efficiency of the aircraft. 
+		Gust loads are well known as a source of potential catastrophic failure in aircraft structures; with rare, extreme gusts in particular being a source of the maximum loads that an aircraft may experience. \cite{Wu2019,Guo_2015}. Aircraft structural requirements are driven by extreme cases to prevent failure, despite operating in far less intense loading environments for the majority of the aircraft's service life \cite{Li2021}. The added capability to cope with extreme gust loads is unnecessary most of the time and comes with an associated parasitic mass increase, which causes reduced fuel efficiency of the aircraft. 
 		
 		Gust load alleviation (GLA) systems aim to reduce the effect of gust loads while minimising mass increase by altering the aerodynamic profile of the wing \cite{Li_2022}. Active control surfaces such as ailerons, spoilers have been used to achieve this \cite{Li_2022}. However, such control surfaces utilise conventional, active actuation mechanisms such as hydraulic or electro-mechanical actuators \cite{QI_2011}. These mechanisms still introduce significant mass and complexity to aircraft which still results in a decrease to fuel efficiency and an increase in cost and manufacture time. A passively actuated GLA system is a mechanism which is able to deploy using the deformation of the wing itself. These are attractive as they are typically simpler and require no external energy \cite{Li_2022}. A lightweight, passive GLA system could provide the necessary gust alleviation whilst keeping the parasitic mass added to the aircraft low.  
 		
@@ -43,9 +44,30 @@ style=ieee,
          By extending this approach to include the exploitation of interacting instabilities, new interesting and novel designs for dynamic structures can be produced. Buckling modes are able to interact with each other and interacting instabilities occur when two or more buckling modes share coincident critical points \cite{Wheatcroft_2023}. Whilst the adoption of structural instability as a design feature has received much attention in recent years and shifted the view of instability to be more positive, interacting instabilities are still viewed primarily as a failure mechanism. A novel concept for a passively-actuated spoiler proposed by Wheatcroft et al. exploits sequential, interacting instabilities to produce a large post buckling deflection in a bistable, constant curvature, composite laminate \cite{Wheatcroft_2023}. A pair of instabilities can be considered sequential when an instability in one system triggers a subsequent instability in another. Utilising sequential instability as a design feature enables refined control over the device deployment, whilst eliminating the need for heavy, active deployment mechanisms.
 		
 		\subsection{Pop-up Spoiler Concept}
-		
-		The novel spoiler concept proposed by Wheatcroft et al. is shown in Figure XX and is constituted from an Euler strut and a bistable composite laminate. In the original work the laminate is a constant curvature. For this investigation, the concept is extended to include a composite laminate shaped to the upper surface of an aerofoil to better resemble the application for a wing mounted spoiler. It is envisioned that strain caused by deflection in a wing under heavy load will cause the strut to buckle into a mode that subsequently causes the laminate to buckle, creating a sequential instability. A representative bar and spring diagram for this system is shown in Figure XX. From this diagram the deployment mechanism which exploits the  interaction between the a pair of instabilities can clearly be seen. This should produce the ideal behaviour, shown in Figure XX, where the deflection of the laminate, $u_out$, is plotted as a function of the enforced axial compressive deformation of the Euler strut, $u_in$. Once $u_in$  reaches a critical value it results in the system traversing an unstable region, resulting in a dynamic deflection.
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[height=8cm]{IntroductionImages/Concept.png}
+			\caption{FE model of original concept for passively actuated pop-up spoiler, \textbf{(a)}: undeployed state, \textbf{(b)} deployed state. (Taken from \cite{Wheatcroft_2023})}
+			\label{fig:OGConcept}
+		\end{figure}
+	
+		The original novel spoiler concept proposed by Wheatcroft et al. is shown in Figure \ref{fig:OGConcept} and is constituted from an Euler strut and a bistable composite laminate. In the original work the laminate is a constant curvature. For this investigation, the concept is extended to include a composite laminate shaped to the upper surface of an aerofoil to better resemble the application for a wing mounted spoiler. It is envisioned that strain caused by deflection in a wing under heavy load will cause the strut to buckle into a mode that subsequently causes the laminate to buckle, creating a sequential instability. A representative bar and spring diagram for this system is shown in Figure \ref{fig:BarNSpring}. From this diagram the deployment mechanism which exploits the  interaction between the a pair of instabilities can clearly be seen. This should produce the ideal behaviour, shown in Figure XX, where the deflection of the laminate, $u_out$, is plotted as a function of the enforced axial compressive deformation of the Euler strut, $u_in$. Once $u_in$  reaches a critical value it results in the system traversing an unstable region, resulting in a dynamic deflection.
 
+		\begin{figure}[!h]
+			\centering
+			\includesvg[height=8cm]{IntroductionImages/vK-Strut_V2.svg}
+			\caption{Bar and spring model representing the sequential instability system of the concept. (Reprinted from \cite{Wheatcroft_2023})}
+			\label{fig:BarNSpring}
+		\end{figure}
+	
+		\begin{figure}[!h]
+			\centering
+			\includesvg[height=8cm]{IntroductionImages/Desired_Path_V4.svg}
+			\caption{Ideal behaviour of the passively actuated spoiler concept. (Reprinted from \cite{Wheatcroft_2023})}
+			\label{fig:DesiredPath}
+		\end{figure}
+	
+		
 	\section{Methodology}
 		
 	\subsection{Equations}
@@ -90,3 +112,19 @@ style=ieee,
     \printbibliography
 	
 \end{document}
+
+%%TEMPLATES
+%%PNG or JPEG files
+\begin{figure}[!h]
+	\centering
+	\includegraphics[height=8cm]{}
+	\caption{Caption}
+	\label{fig:}
+\end{figure}
+%% SVG Files
+\begin{figure}[!h]
+	\centering
+	\includesvg[height=8cm].svg}
+	\caption{Caption}
+	\label{fig:}
+\end{figure}
