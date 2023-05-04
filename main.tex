@@ -72,7 +72,7 @@ style=ieee,
 		\end{figure}
        
 	  \subsection{Research Objectives}
-        The primary objective of the present work was to develop a method to experimentally demonstrate sequential instability to display the feasibility of the passively actuated spoiler concept proposed in \cite{Wheatcroft_2023}. The secondary objective was to characterise the relationship between the response of the system and the properties of both the Euler strut and laminate. 
+        The primary objective of the present work was to develop a method to experimentally demonstrate sequential instability to display the feasibility of the passively actuated spoiler concept proposed by Wheatcroft et al. in \cite{Wheatcroft_2023}. The secondary objective was to characterise the relationship between the response of the system and the properties of both the Euler strut and laminate. 
    
 		
 	\section{Manufacturing}
@@ -80,19 +80,77 @@ style=ieee,
     \subsubsection{Cutting}
     To mitigate dust generation SE-84LV laminate was cut with a water-lubricated wet diamond tile cutter by RUBI. To mitigate the risk of chipping the thin ply was cut with stainless steel Glass Fibre Shears by Wilkinson.
     \subsection{Test Rig}
-
+    \subsubsection{MDF Aerofoil}
+    Limitation in the availability of workshops r(intrro). 
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width = 0.5\linewidth]{Figures/Jan/laser2.png}
+        \caption{Caption}
+        \label{fig:laser}
+    \end{figure}
+    Thirty sections illustrated in~\Cref{fig:laser} were cut out of \SI{10}{\milli \meter} thick MDF using Trotec SP 500. Sections were later glued using PVA-based glue. After curing for 24 hours the part  was sanded with an oscillatory sander (BRAND MISSING) using 80-grid sandpaper. Pilot holes for brass inserts were drilled out and the tool surface was painted black. Brass inserts (BRand missing) were placed in pre-drilled holes and were hammered down.
+    \subsubsection{Boundary Conditions}
+    \begin{figure}[h!]
+        \centering
+        %\includegraphics[width = \linewidth]{Figures/Jan/nipple.png}
+        \includegraphics[width = \linewidth]{Figures/Jan/nippleNumber.PNG}
+        \caption{Caption}
+        \label{fig:nipple}
+    \end{figure}
     \section{Numerical Modelling}
     ABAQUS was used for the finite element analysis of the strut-spoiler system. The Euler strut was modelled with beam elements and the spoiler used composite shell elements, as seen in \cref{fig:ModelAssem}. The spoiler was designed to follow the profile of the NACA 3412 aerofoil. 
-    A tie constraint was applied at the centre of the strut and at the centre of the equivalent quarter-chord position of the spoiler (point A in \cref{fig:ModelAssem}). A mesh sensitivity study was also performed. Following from Ref.\cite{Wheatcroft_2023}, the spoiler is clamped at the leading edge and the nodes at point B are constrained to only move in the XZ plane. Additionally, the Euler Strut has pinned-pinned edge constraints. 
-    \\
-    The column was modelled as steel ($E = 200\;GPa$, $v=0.3$) and the aerofoil was modelled as one of two laminates.  The properties of the two laminates are shown in Table XX.
+    A tie constraint was applied at the centre of the strut and at the centre of the equivalent quarter-chord position of the spoiler (point A in \cref{fig:ModelAssem}). A mesh sensitivity study, outlined in \cref{fig:MeshSens} was also performed. Following from \cite{Wheatcroft_2023}, the spoiler is clamped at the leading edge and the nodes at point B are constrained to only move in the XZ plane. Additionally, the Euler Strut has clamped-clamped edge constraints. 
 
+        \begin{figure}[!h]
+        \footnotesize
+        \centering
+        \includesvg[width=0.5\textwidth]{ModellingImages/MeshSens.svg}
+        \caption{ XX }
+        \label{fig:MeshSens}
+    \end{figure}
+    \normalfont
+    %\\
+    The Euler strut was modelled as steel ($E$ = \SI{200}{GPa}, $\nu$ = \SI{0.3}{}) and the spoiler was modelled as one of two laminates.  The properties of the two laminates are shown in \cref{tab:ModelProp}.
+    %\\
+    
+    In order to model the non-linear behaviour and to map the post-buckling response, a Riks step was used. A compressive displacement of \SI{1}{\milli\meter} was prescribed to both ends of the column in this step. The first buckling event is the Euler buckling of the Euler strut. At the point of buckling, the column reaches a pitchfork bifurcation. In order to bring the response down the desired equilibrium path (buckling in the positive $y$ direction, into the spoiler), an imperfection was seeded into the model. The imperfection took the form of a 2.5 N force acting in the positive $y$ direction at point A. This force was assigned to the model before the Riks step, to ensure the force stays constant during the analysis. Naturally, any imperfection would impact the response. For example, \cref{fig:Imperfect}, displays the difference in results when a \SI{5}{\newton} force is used instead of the \SI{2.5}{\newton} force. The tip displacement at zero axial beam displacement is higher for the former case. This results in a lower axial beam displacement for any given vertical trailing edge displacement, meaning that the spoiler would snap through at a lower applied displacement. The chosen \SI{2.5}{\newton} force seeds a \SI{0.10}{\milli\meter} vertical displacement to the centre of the beam, \SI{0.014}{\percent} of the total length of the beam. For the experimental beam, the imperfections would likely be larger than this and they are also likely to vary greatly. To simplify the comparison between the numerical and experimental results, a beam with minimal imperfections was modelled, so a nudge force of \SI{2.5}{\newton} was used. 
+
+    \begin{figure}[!h]
+        \footnotesize
+        \centering
+        \includesvg[width=0.5\textwidth]{ModellingImages/Imperfections.svg}
+        \caption{ XX }
+        \label{fig:Imperfect}
+    \end{figure}
+    \normalfont
+   % \\
+
+    The SE 84LV/ HEC laminate has extension-twist coupling. Therefore, the spoiler made from this laminate would experience thermal warping, when it cools after cure. This thermal warping was incorporated into the model for using the SE 84LV/ HEC laminate. Generic coefficients of thermal expansion (CTE) values were assigned to the laminate ($1\cdot10^{-6}K^{-1}$ and $3.5\cdot10^{-5}K^{-1}$, for the CTE parallel and perpendicular to the fibre direction, respectively). To minimise warping, a low temperature was chosen for the cure dwell time, of 80\;$^\circ C$. Therefore, a temperature field of -60\;$^\circ C$ was applied to the model to allow the analysis of the risk to be carried out on the warped laminate. However, the North Thinply 402/ T1000 laminate has no extension-twist coupling, so there was no temperature field applied in its analysis. 
+
+
+    \begin{table*}[]
+    \centering
+    \small
+     \caption{ Material properties of ... }
+     \label{tab:ModelProp}
+    \begin{tabular}{|l|l|l|l|l|l|l|l|l|}
+    \hline
+    \textbf{Laminate}   &  \textbf{Layup}   & $\mathbf{t}$ & $\mathbf{E_{11}}$ & $\mathbf{E_{22}}$ & $\mathbf{G_{12}}$ & $\mathbf{G_{13}}$ & $\mathbf{G_{23}}$ & $\mathbf{\nu_{12}}$ \\ 
+    && \textbf{{[}mm{]}} & \textbf{{[}GPa{]}} & \textbf{{[}GPa{]}} & \textbf{{[}GPa{]}} & \textbf{{[}GPa{]}} & \textbf{{[}GPa{]}} &  \\ 
+    \hline
+    North Thinply  & [45/-45$_{2}$/45/0/-45/45$_{2}$/-45] & 0.032               & 145                   & 8.8                   & 4.5                    & 4.5                    & 4.5                    & 0.3          \\ 
+     402/ T1000 &&                &                    &                   &                  &                    &                   &          \\ 
+    \hline
+    SE 84LV/ HEC            & [45/-45/0/45/-45] & 0.169               & 134                   & 8.3                   & 4                      & 4                      & 3.1                    & 0.314        \\ \hline
+    \end{tabular}
+    \end{table*}
+    \normalfont
 
 
     \begin{figure*}[!h]
         \centering
         \includegraphics[width=\textwidth]{ModellingImages/ModelAssem.png}
-        \caption{}
+        \caption{ XX }
         \label{fig:ModelAssem}
     \end{figure*}
 	
@@ -115,6 +173,9 @@ style=ieee,
     %   Match ID vs DaVinci - Jacopo/Gokhan
     %   Beam vs Crosshead Displacement – Jacopo/Anna
 
+    \subsection{Numerical Results}
+    $u_{in}$ vs $u_{out}$ graphs which show the displacement response of the system are shown in 
+	
     \subsection{Experimental Results}
     
     % Strain Maps – Jacopo/Anna/Asaad
@@ -122,13 +183,7 @@ style=ieee,
     % Fin vs Fc – Jacopo/Anna/Asaad
     % Fc vs Uout,c – Jacopo/Anna/Asaad
 
-    \subsection{Numerical Results}
 
-    % Strain Maps – Mat(thew)s
-    % Uin vs Uout – J Mat(thew)s
-    % Fin vs Fc – Mat(thew)s
-    % Fc vs Uout,c – Mat(thew)s
-	
 	\section{Conclusion}
 
  -
