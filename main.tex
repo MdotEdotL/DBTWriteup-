@@ -43,8 +43,8 @@ style=ieee,
 		
 		\subsection{Sequential Instabilities}
 		A potential actuation mechanism for a passive GLA system is through the utilisation of structural instabilities. The traditional view on structural instability, known as '\textit{Buckliphobia}', is largely negative and the presence of buckling is seen as a failure mode. '\textit{Buckliphillia}' is an emerging design philosophy which seeks to exploit instability as a design feature \cite{Reis_2015}. By deliberately designing a structure to become unstable in predictable ways, useful functionality can be achieved, such as large and rapid deflections in shape morphing structures. This approach has potential application for aircraft design as the deflections necessary for actuating a control surface could be achieved through a '\textit{Buckliphillic}' approach. Examples of structural instability exploited for functionality in control surface actuation include: A bistable composite trailing edge flap \cite{Daynes2010} and a non-linear spring wing-tip device for gust load alleviation \cite{Castrichini2017}.
-		
-         By extending this approach to include the exploitation of interacting instabilities, new interesting and novel designs for dynamic structures can be produced. Buckling modes are able to interact with each other and interacting instabilities occur when two or more buckling modes share coincident critical points \cite{Wheatcroft_2023}. Whilst the adoption of structural instability as a design feature has received much attention in recent years and shifted the view of instability to be more positive, interacting instabilities are still viewed primarily as a failure mechanism. A novel concept for a passively-actuated spoiler proposed by Wheatcroft et al. exploits sequential, interacting instabilities to produce a large post buckling deflection in a bistable, constant curvature, composite laminate \cite{Wheatcroft_2023}. A pair of instabilities can be considered sequential when an instability in one system triggers a subsequent instability in another. Utilising sequential instability as a design feature enables refined control over the device deployment, whilst eliminating the need for heavy, active deployment mechanisms.
+
+        While functionality using single structural instabilities has been achieved, as seen in the aforementioned designs, the different types of instability are not all suitable for every application and there are positives and negatives to each. For example, super-critical bifurcations offer minimal deflections pre-buckling, useful behaviour for structures to remain stowed, but its stable post buckling response limits its ability to achieve rapid and large deflections \cite{Wheatcroft_2023}. By extending this approach to include the exploitation of interacting instabilities, new interesting and novel designs for dynamic structures can be produced. Buckling modes are able to interact with each other and interacting instabilities occur when two or more buckling modes share coincident critical points \cite{Wheatcroft_2023}. Whilst the adoption of structural instability as a design feature has received much attention in recent years and shifted the view of instability to be more positive, interacting instabilities are still viewed primarily as a failure mechanism. Use of sequential instabilities could allow for multiple instability types to be exploited within a single strucutre, enabling refined control over the device deployment. A pair of instabilities can be considered sequential when an instability in one system triggers a subsequent instability in another. A novel concept for a passively-actuated spoiler proposed by Wheatcroft et al. exploits sequential, interacting instabilities to produce a large post buckling deflection in a bistable, constant curvature, composite laminate \cite{Wheatcroft_2023}. This concept design could allow for alleviation of wing loads under gust, whilst eliminating the need for heavy, active deployment mechanisms.
 		
 		\subsection{Pop-up Spoiler Concept}
 		\begin{figure}[!h]
@@ -84,16 +84,17 @@ style=ieee,
     Limitation in the availability of workshops r(intrro). 
     \begin{figure}[h]
         \centering
-        \includegraphics[width = 0.5\linewidth]{Figures/Jan/laser2.png}
+        \includegraphics[width = \linewidth]{Figures/Jan/laser2.png}
         \caption{Caption}
         \label{fig:laser}
     \end{figure}
-    Thirty sections illustrated in~\Cref{fig:laser} were cut out of \SI{10}{\milli \meter} thick MDF using Trotec SP 500. Sections were later glued using PVA-based glue. After curing for 24 hours the part  was sanded with an oscillatory sander (BRAND MISSING) using 80-grid sandpaper. Pilot holes for brass inserts were drilled out and the tool surface was painted black. Brass inserts (BRand missing) were placed in pre-drilled holes and were hammered down.
+    Thirty sections illustrated in~\Cref{fig:laser} were cut out of \SI{10}{\milli \meter} thick MDF using Trotec SP 500. Sections were later glued using PVA-based glue. After curing for 24 hours the part  was sanded with an oscillatory sander from Makita using 80-grid sandpaper. Pilot holes for brass inserts were drilled out and the tool surface was painted black. Brass inserts from AIEX were placed in pre-drilled holes and were hammered down.
     \subsubsection{Boundary Conditions}
+    Tabs illustrated in~\cref{fig:nipple} were laser cut form \SI{6}{\milli \meter} cast acrylic using Trotec SP 500, they were used to apply pin support to the test laminate in a point corresponding to point C in \cref{fig:OGConcept}. Two holes spaced \SI{200}{\milli \meter} apart have been drilled into a mild steel bar 15x5x270\SI{}{\milli \meter} using Axminster trade at325PD pillar drill. Bar was wrapped with black electrical tape to avoid reflection and was used to clamp the composite leading edge to the aerofoil.
     \begin{figure}[h!]
         \centering
         %\includegraphics[width = \linewidth]{Figures/Jan/nipple.png}
-        \includegraphics[width = \linewidth]{Figures/Jan/nippleNumber.PNG}
+        \includegraphics[width = 0.6\linewidth]{Figures/Jan/nippleNumber.PNG}
         \caption{Caption}
         \label{fig:nipple}
     \end{figure}
@@ -105,7 +106,7 @@ style=ieee,
         \footnotesize
         \centering
         \includesvg[width=0.5\textwidth]{ModellingImages/MeshSens.svg}
-        \caption{ XX }
+        \caption{ The variation in the post-buckling response, of the Thinply laminate, for varying numbers of elements meshed to the spoiler. 2010 elements was found to be an adequate compromise between accuracy and run time. As the Euler strut is relatively simpler, a mesh sensitivity study was thought to be unnecessary, and a total of 140 beam elements were used.}
         \label{fig:MeshSens}
     \end{figure}
     \normalfont
@@ -113,13 +114,16 @@ style=ieee,
     The Euler strut was modelled as steel ($E$ = \SI{200}{GPa}, $\nu$ = \SI{0.3}{}) and the spoiler was modelled as one of two laminates.  The properties of the two laminates are shown in \cref{tab:ModelProp}.
     %\\
     
-    In order to model the non-linear behaviour and to map the post-buckling response, a Riks step was used. A compressive displacement of \SI{1}{\milli\meter} was prescribed to both ends of the column in this step. The first buckling event is the Euler buckling of the Euler strut. At the point of buckling, the column reaches a pitchfork bifurcation. In order to bring the response down the desired equilibrium path (buckling in the positive $y$ direction, into the spoiler), an imperfection was seeded into the model. The imperfection took the form of a 2.5 N force acting in the positive $y$ direction at point A. This force was assigned to the model before the Riks step, to ensure the force stays constant during the analysis. Naturally, any imperfection would impact the response. For example, \cref{fig:Imperfect}, displays the difference in results when a \SI{5}{\newton} force is used instead of the \SI{2.5}{\newton} force. The tip displacement at zero axial beam displacement is higher for the former case. This results in a lower axial beam displacement for any given vertical trailing edge displacement, meaning that the spoiler would snap through at a lower applied displacement. The chosen \SI{2.5}{\newton} force seeds a \SI{0.10}{\milli\meter} vertical displacement to the centre of the beam, \SI{0.014}{\percent} of the total length of the beam. For the experimental beam, the imperfections would likely be larger than this and they are also likely to vary greatly. To simplify the comparison between the numerical and experimental results, a beam with minimal imperfections was modelled, so a nudge force of \SI{2.5}{\newton} was used. 
+    In order to model the non-linear, post buckling behaviour and to map the system's equilibrium paths, a Riks step was used. A compressive displacement of \SI{1}{\milli\meter} was prescribed to both ends of the column in this step. The first buckling event is the Euler buckling of the Euler strut. At the point of buckling, the column reaches a pitchfork bifurcation. In order to bring the response down the desired equilibrium path (buckling in the positive $y$ direction, into the spoiler), an imperfection was seeded into the model. The imperfection took the form of a \SI{2.5}{\newton} force acting in the positive $y$ direction at point A. This force was assigned to the model before the Riks step, to ensure the force stays constant during the analysis. Naturally, any imperfection would impact the response. For example, \cref{fig:Imperfect}, displays the difference in results when a \SI{5}{\newton} and \SI{10}{\newton} force is used instead of the \SI{2.5}{\newton} force. The tip displacement at zero axial beam displacement is higher for the two former cases. This results in a lower axial beam displacement for any given vertical trailing edge displacement, meaning that the spoiler would snap through at a lower applied displacement. The chosen \SI{2.5}{\newton} force seeds a \SI{0.10}{\milli\meter} vertical displacement to the centre of the beam, \SI{0.014}{\percent} of the total length of the beam. For the experimental beam, the imperfections would likely be larger than this and they are also likely to vary greatly. To simplify the comparison between the numerical and experimental results, a beam with minimal imperfections was modelled, so a nudge force of \SI{2.5}{\newton} was used. 
+
+    The signs of the eigenvalues for the tangent stiffness matrix were used to determine the stability of the system. ABAQUS indicates if at least one of the eigenvalues of the tangent stiffness matrix is negative, in each analysis increment. If all the eigenvalues are positive, the system is stable. However, if at least one is negative, the system is unstable. 
+   
 
     \begin{figure}[!h]
         \footnotesize
         \centering
-        \includesvg[width=0.5\textwidth]{ModellingImages/Imperfections.svg}
-        \caption{ XX }
+        \includesvg[width=0.5\textwidth]{ModellingImages/Imperfections_3plots.svg}
+        \caption{ The variation in the post-buckling response, of the Thinply laminate, for varying magnitudes of the force applied for the seeded imperfection. The blue and red sections of the curves represent the stable and unstable sections of the response, respectively.}
         \label{fig:Imperfect}
     \end{figure}
     \normalfont
@@ -131,11 +135,11 @@ style=ieee,
     \begin{table*}[]
     \centering
     \small
-     \caption{ Material properties of ... }
+     \caption{ Material properties of the two laminates. The properties of the Thinply laminate were taken from unpublished data provided by the University \cite{DBTmaterials}. The properties from the SE84 laminate were calculated from the constituent properties \cite{se84} }
      \label{tab:ModelProp}
     \begin{tabular}{|l|l|l|l|l|l|l|l|l|}
     \hline
-    \textbf{Laminate}   &  \textbf{Layup}   & $\mathbf{t}$ & $\mathbf{E_{11}}$ & $\mathbf{E_{22}}$ & $\mathbf{G_{12}}$ & $\mathbf{G_{13}}$ & $\mathbf{G_{23}}$ & $\mathbf{\nu_{12}}$ \\ 
+    \textbf{Laminate}   &  \textbf{Layup}   & $\mathbf{t}$ & $\mathbf{E_{11}}$ & $\mathbf{E_{22}}$ & $\mathbf{G_{12}}$ & $\mathbf{G_{13}}$ & $\mathbf{G_{23}}$ & $\mathbf{\boldsymbol{\nu}_{12}}$ \\ 
     && \textbf{{[}mm{]}} & \textbf{{[}GPa{]}} & \textbf{{[}GPa{]}} & \textbf{{[}GPa{]}} & \textbf{{[}GPa{]}} & \textbf{{[}GPa{]}} &  \\ 
     \hline
     North Thinply  & [45/-45$_{2}$/45/0/-45/45$_{2}$/-45] & 0.032               & 145                   & 8.8                   & 4.5                    & 4.5                    & 4.5                    & 0.3          \\ 
@@ -150,41 +154,78 @@ style=ieee,
     \begin{figure*}[!h]
         \centering
         \includegraphics[width=\textwidth]{ModellingImages/ModelAssem.png}
-        \caption{ XX }
+        \caption{FE model of the Euler strut and spoiler system}
         \label{fig:ModelAssem}
     \end{figure*}
 	
     \section{Testing Procedure}
 
-    \subsection{Requirements}
-    % Asaad
-
-    \subsection{Set Up}
-    % Schimadzu - Asaad
-    % Force Sensor - Asaad
-    % Camera/DIC - Gokhan
-    % Speckle/Calibration - Gokhan
-	
-	\section{Results}
-
-    \subsection{Post Processing}
-
-    %	Subset Optimisation – Jacopo/Gokhan
-    %   Match ID vs DaVinci - Jacopo/Gokhan
-    %   Beam vs Crosshead Displacement – Jacopo/Anna
-
-    \subsection{Numerical Results}
-    $u_{in}$ vs $u_{out}$ graphs which show the displacement response of the system are shown in 
-	
-    \subsection{Experimental Results}
+        \subsection{Experimental Requirements}
+        % Asaad
     
-    % Strain Maps – Jacopo/Anna/Asaad
-    % Uin vs Uout – Jacopo/Anna/Asaad
-    % Fin vs Fc – Jacopo/Anna/Asaad
-    % Fc vs Uout,c – Jacopo/Anna/Asaad
+        \subsection{Experimental Set Up}
+        % Schimadzu - Asaad
+        % Force Sensor - Asaad
+        % Camera/DIC - Gokhan
+        % Speckle/Calibration - Gokhan
+    
+        \subsection{Adopted Parameters}
+    
+        % Anna (Horrible British Woman)
+        % I'd put "testing" insted of "ramping" -Jacopo
+        % I'd put the recording speed with the led power -Jacopo
+    
+        The recording speed for the high speed camera was selected at 2000 frames per second. This was chosen to account for a 10.9 second buffer, allowing the full test from the application of the force to the retraction plate to be completed and captured. The ramping methods were chosen via trial and error, where a trial plate was loaded and unloaded via various displacement rates until the entire test was able to be completed within the buffer time, while achieving the plate deployment. It should be noted that, after the deployment, the crosshead returned to its initial position at the default return speed of the Shimadzu testing machine, which could not be changed.
+    
+        The ramping method applied to the Shimadzu for the SE84 plate was as follows:
+            \begin{enumerate}
+                \item Ramp at $0.25\;\text{mm/sec}$ up to $0.5\;\text{mm}$;
+                \item Hold for $0.1\;\text{sec}$;
+                \item Ramp at $0.5\;\text{mm/min}$ up to $2300\;\text{N}$;
+                \item Return to initial position.
+            \end{enumerate}
+    
+        The ramping method applied to the Shimadzu for the T1000 plate was as follows:
+            \begin{enumerate}
+                \item Ramp at $0.25\;\text{mm/sec}$ up to $0.23\;\text{mm}$;
+                \item Hold for $0.1\;\text{sec}$;
+                \item Ramp at $0.5\;\text{mm/min}$ up to $930\;\text{N}$;
+                \item Return to initial position.
+            \end{enumerate}
+    
+        The LED's were positioned to face the plate and a power of $15\%$ was imposed for a homogeneous illumination entire composite plate, and to avoid glare and reflections which potentially could invalidate the DIC results. %plate? shell?
+	
+    \section{Results}
+    
+        \subsection{Numerical Results}
+        $u_{in}$ vs $u_{out}$ graphs which show the displacement response of the system produced in the FE models for both SE84 and Thinply are shown in \cref{fig:TPUinUout} and Figure XX. These plots are related to the ideal behaviour of the system which is shown in \cref{fig:DesiredPath}. For both materials the response follows the desired behaviour, with an initial small increase to $u_{out}$ until $u_{in}$ reaches a critical value. After $u_{in}$ reaches the critical value there is a rapid increase to $u_{out}$
+               
+        Eigenvalue analysis of the models was used to determine the stability of the model at each step. A negative eignvalue indicates that the model is unstable. The unstable regions are denoted in \cref{fig:TPUinUout} and Figure XX. 
+        %Something about path following
+            %mention snap over here or in the experimental
+                %I think experimental
+    	\begin{figure}[!h]
+        	\centering
+        	\includesvg[width=0.45\textwidth]{ResultModelsImages/UinUoutTP.svg}
+        	\caption{Caption}
+        	\label{fig:TPUinUout}
+        \end{figure}
 
+        \subsection{Post Processing of Experimental Data}
+    
+        %	Subset Optimisation – Jacopo/Gokhan
+        %   Match ID vs DaVinci - Jacopo/Gokhan
+        %   Beam vs Crosshead Displacement – Jacopo/Anna
+        
+        \subsection{Experimental Results}
+        
+        % Strain Maps – Jacopo/Anna/Asaad
+        % Uin vs Uout – Jacopo/Anna/Asaad
+        % Fin vs Fc – Jacopo/Anna/Asaad
+        % Fc vs Uout,c – Jacopo/Anna/Asaad
+    
 
-	\section{Conclusion}
+    \section{Conclusion}
 
  -
 	
